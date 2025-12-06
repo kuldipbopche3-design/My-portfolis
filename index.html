@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Kuldeep Bopche | Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons (Vanilla JS version) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="container navbar-container">
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <span class="angle">&lt;</span>
+        Kuldeep<span class="slash">/B</span>
+        <span class="angle">&gt;</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="desktop-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <a href="/evolution_of_wab.pdf" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm btn-icon">
+          Resume <i data-lucide="download"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="mobile-menu-btn-wrapper">
+        <button id="mobile-menu-btn" class="icon-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="/evolution_of_wab.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
+        Download Resume <i data-lucide="download"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- Background decoration -->
+    <div class="bg-decoration">
+      <div class="blob blob-cyan"></div>
+      <div class="blob blob-purple"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <h2 class="hero-subtitle">Hello, I'm</h2>
+        <h1 class="hero-title">Kuldeep Bopche</h1>
+        <div class="typing">
+          <h2 class="text-uppercase">FullstackDaveloper</h2>
+        </div>
+        <p class="hero-description">
+          Building robust, scalable, and user-centric digital experiences.
+        </p>
+
+        <div class="centerhero">
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-icon">
+              View Projects <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/kuldipbopche3-design" target="_blank" rel="noopener noreferrer"
+            class="social-icon">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kuldeep-bopche-052026284?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" rel="noopener noreferrer" class="social-icon-linkdl">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:bhikuldeep2@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper reveal delay-200">
+        <div class="hero-image-container">
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Kuldeep Bopche" class="hero-img">
+        </div>
+        <div class="hero-deco deco-1"></div>
+        <div class="hero-deco deco-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-content reveal delay-200">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Kuldeep Bopche">
+        </div>
+
+        <div class="about-text">
+          <h3>I'm <span>Kuldeep Bopche</span>, a Full-Stack Web Developer</h3>
+          <p>
+            I am a passionate Full-Stack Developer with a knack for solving complex problems. Currently a B.Tech
+            student, I specialize in building modern web applications using the MERN stack or AI. I love contributing to
+            open
+            source and learning new technologies to stay ahead in the tech landscape.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="user"></i></div>
+              <div>
+                <p class="info-label">Experience</p>
+                <p class="info-value">8 months</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="graduation-cap"></i></div>
+              <div>
+                <p class="info-label">Education</p>
+                <p class="info-value">B.Tech, Computer Science</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <p class="info-label">Location</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Seoni,+Madhya+Pradesh" target="_blank"
+                  rel="noopener noreferrer" class="info-link">
+                  Seoni, Madhya Pradesh
+                </a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="user"></i></div>
+              <div>
+                <p class="info-label">Availability</p>
+                <p class="info-value">Open for work</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="flame"></i></div>
+              <div>
+                <p class="info-label">My Passion </p>
+
+                <p class="info-value">Content Creation, Learn about AI agents, Calesthenics, Books Reading</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="drama"></i></div>
+              <div>
+                <p class="info-label">My Weekness</p>
+
+                <p class="info-value big">You</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-action">
+            <a href="/evolution_of_wab.pdf" class="text-link">
+              Download Full Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="skills-bg"></div>
+
+    <div class="container relative-z">
+      <div class="section-header reveal">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">
+          A toolkit of modern technologies that I use to bring ideas to life.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-category reveal delay-100">
+          <h3 class="category-title">Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+              </div>
+              <span>React.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"
+                  class="invert-icon">
+              </div>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript">
+              </div>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="Tailwind CSS">
+              </div>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal delay-200">
+          <h3 class="category-title">Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+              </div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
+                  class="invert-icon">
+              </div>
+              <span>Express</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript" height="40" />
+              </div>
+              <span>Jawascript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category reveal delay-300">
+          <h3 class="category-title">Database</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB">
+              </div>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL">
+              </div>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"
+                  height="40" />
+              </div>
+              <span>SQLite</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                  alt="Cloud" height="40" />
+              </div>
+              <span>Cloud</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal delay-400">
+          <h3 class="category-title">Tools & DevOps</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+              </div>
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                  alt="AWS">
+              </div>
+              <span>AWS</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+              </div>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-dark">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div class="header-text">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc text-left">Selected works that showcase my skills and passion.</p>
+        </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="view-github desktop-only">
+          View Github <i data-lucide="external-link"></i>
+        </a>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal delay-100">
+          <div class="project-image">
+            <img src="https://picsum.photos/800/600?random=1" alt="E-Commerce Dashboard">
+            <div class="overlay"></div>
+            <div class="project-links">
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="Live Demo">
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="View Code">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>E-Commerce Dashboard</h3>
+            <p>A comprehensive admin dashboard for managing products, orders, and analytics. Features real-time data
+              visualization and role-based access control.</p>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Tailwind</span>
+              <span>Recharts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal delay-200">
+          <div class="project-image">
+            <img src="https://picsum.photos/800/600?random=2" alt="Social Connect App">
+            <div class="overlay"></div>
+            <div class="project-links">
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="Live Demo">
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="View Code">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Social Connect App</h3>
+            <p>A social media platform enabling users to share posts, like, comment, and connect with others. Includes
+              real-time chat functionality.</p>
+            <div class="tech-tags">
+              <span>Next.js</span>
+              <span>MongoDB</span>
+              <span>Cloudinary</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal delay-300">
+          <div class="project-image">
+            <img src="https://picsum.photos/800/600?random=3" alt="AI Content Generator">
+            <div class="overlay"></div>
+            <div class="project-links">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="icon-circle youtube"
+                title="Watch Demo">
+                <i data-lucide="youtube"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="View Code">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>AI Content Generator</h3>
+            <p>A SaaS tool that uses Gemini API to generate blog posts, captions, and marketing copy. Integrated with
+              Stripe for payments.</p>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Gemini API</span>
+              <span>Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal delay-400">
+          <div class="project-image">
+            <img src="https://picsum.photos/800/600?random=4" alt="Task Master">
+            <div class="overlay"></div>
+            <div class="project-links">
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="Live Demo">
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-circle"
+                title="View Code">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Task Master</h3>
+            <p>A collaborative project management tool similar to Trello. Supports drag-and-drop tasks, team workspaces,
+              and deadline tracking.</p>
+            <div class="tech-tags">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Pinia</span>
+              <span>SortableJS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mobile-action">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="view-github">
+          View More on Github <i data-lucide="external-link"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section bg-dark relative-z">
+    <div class="bg-blur-orb"></div>
+    <div class="container relative-z">
+      <div class="section-header reveal">
+        <h2 class="section-title">What I Offer</h2>
+        <p class="section-desc">
+          High-quality development services tailored to your needs.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal delay-100">
+          <div class="service-icon">
+            <i data-lucide="layout"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building responsive, high-performance websites using modern frameworks like React and Next.js.</p>
+        </div>
+        <div class="service-card reveal delay-200">
+          <div class="service-icon">
+            <i data-lucide="server"></i>
+          </div>
+          <h3>Backend API Design</h3>
+          <p>Creating secure and scalable RESTful and GraphQL APIs for web and mobile applications.</p>
+        </div>
+        <div class="service-card reveal delay-300">
+          <div class="service-icon">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3>UI/UX Implementation</h3>
+          <p>Translating design mockups (Figma/Adobe XD) into pixel-perfect, interactive code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Experience & Achievements</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Experience 1 -->
+        <div class="timeline-item left reveal delay-100">
+          <div class="timeline-dot">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="company-name">My Performance</span>
+              <span class="badge">Collage</span>
+            </div>
+            <h3>Manage The CGPA arround - 7.5</h3>
+            <div class="timeline-date">
+              <i data-lucide="calendar"></i> june 2023 - sept 2025
+            </div>
+            <p>i maintain the CGPA arround 7.5 in each semester and maintain the Attendence in a Collage 78% attendance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item right reveal delay-200">
+          <div class="timeline-dot">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="company-name">GitHub Community</span>
+              <span class="badge">Work</span>
+            </div>
+            <h3>Open Source Contributor</h3>
+            <div class="timeline-date">
+              <i data-lucide="calendar"></i> aug 2024 - Present
+            </div>
+            <p>Contributed bug fixes and feature enhancements to popular React UI libraries. Collaborated with global
+              developers.</p>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item left reveal delay-300">
+          <div class="timeline-dot">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="company-name">College Event</span>
+              <span class="badge">Education</span>
+            </div>
+            <h3>Winner - 2nd Smart India Hackathon</h3>
+            <div class="timeline-date">
+              <i data-lucide="calendar"></i> Nov 2024
+            </div>
+            <p>Led a team of 4 to build a PM MNREGA solution using geolocation and real-time messaging.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section bg-dark relative-z overflow-hidden">
+    <!-- Background decorations -->
+    <div class="bg-decoration-testimonial"></div>
+    <div class="bg-decoration-testimonial-2"></div>
+
+    <div class="container relative-z">
+      <div class="section-header reveal">
+        <h2 class="section-title">What Clients Say</h2>
+        <p class="section-desc">
+          Feedback from people I've worked with on various projects.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal delay-100">
+          <div class="quote-icon">
+            <i data-lucide="quote"></i>
+          </div>
+          <p class="testimonial-text">"Kuldeep is an exceptional developer who delivered our project ahead of schedule.
+            His attention to detail and problem-solving skills are top-notch."</p>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/100/100?random=10" alt="Devendra Bhatnager">
+            <div>
+              <h4>Devendra Bhatnager</h4>
+              <p>Product Manager, TechFlow</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-200">
+          <div class="quote-icon">
+            <i data-lucide="quote"></i>
+          </div>
+          <p class="testimonial-text">"Working with Kuldeep was a pleasure. He transformed our complex requirements into
+            a clean, user-friendly interface. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/100/100?random=11" alt="Michael Chen">
+            <div>
+              <h4>Michael Chen</h4>
+              <p>CTO, StartUp Inc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-300">
+          <div class="quote-icon">
+            <i data-lucide="quote"></i>
+          </div>
+          <p class="testimonial-text">"The website Kuldeep built for us exceeded our expectations. It's fast,
+            responsive, and looks amazing. Great communication throughout the process."</p>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/100/100?random=12" alt="Emily Davis">
+            <div>
+              <h4>Emily Davis</h4>
+              <p>Founder, Creative Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div>
+            <h2 class="section-title contact-title">Get In Touch</h2>
+            <p class="section-desc contact-desc">
+              I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to
+              say hi, I'll try my best to get back to you!
+            </p>
+          </div>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div>
+                <h3>Email Me</h3>
+                <a href="mailto:kuldipbopche3@gmail.com">
+                  kuldipbopche3@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <a href="https://www.google.com/maps/search/?api=1&query=Seoni,+Madhya+Pradesh" target="_blank"
+                  rel="noopener noreferrer">
+                  Seoni, Madhya Pradesh
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal delay-200">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="Raj Kandra">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required placeholder="rajexample@gmail.com">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" required rows="4" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <div class="send">
+              <button style="width: 200px;" type="submit" id="submit-btn"
+                class="btn btn-primary btn-full btn-icon justify-center">
+                Send Message <i data-lucide="send"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-credit">
+        Made with <i data-lucide="heart" class="heart-icon"></i> by <span>Kuldeep Bopche</span>
+      </p>
+      <p class="copyright">
+        © <span id="year"></span> All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
